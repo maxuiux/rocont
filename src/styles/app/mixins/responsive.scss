@@ -1,17 +1,11 @@
-@mixin pc {
-    @media (max-width: $breakpoint-pc) {
+@mixin from($min_width) {
+    @media screen and (min-width: $min_width) {
         @content;
     }
 }
 
-@mixin tablet {
-    @media (max-width: $breakpoint-tablet) {
+@mixin to($max_width) {
+    @media screen and (max-width: $max_width) {
         @content;
     }
-}
-
-@mixin mobile {
-    @media (max-width: $breakpoint-mobile) {
-        @content;
-    }
-}
+} 

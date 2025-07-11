@@ -13,20 +13,16 @@ html {
 }
 
 body {
-  font-family: var(--font-family-montserrat);
+  font-family: var(--font-family-tildasans-vf);
   font-size: rem(16);
   font-weight: 500;
   color: var(--color-black);
-  background: var(--maxuiux-color-gray-100);
+  background: var(--color-gray);
   overflow-x: hidden;
   // display: flex;
   // flex-direction: column;
   // justify-content: space-between;
   // min-height: 100dvh;
-
-  @media (prefers-color-scheme: dark) {
-    background: var(--maxuiux-color-purple-1100);
-  }
 }
 
 img,
@@ -43,7 +39,7 @@ a {
 button,
 input,
 label {
-  font-family: var(--font-family-montserrat);
+  font-family: var(--font-family-tildasans-vf);
   outline: none;
 }
 
