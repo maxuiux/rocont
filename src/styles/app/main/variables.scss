@@ -8,7 +8,16 @@
     --color-gray: #F6F6F6;
 
 
-    --transition-1: 0.2s;
+    --transition-1: .2s;
+    --transition-sidebar: .2s cubic-bezier(0.77, 0, 0.175, 1);
+
+    --zindex-dropdown: 1000;
+    --zindex-sidebar: 1010;
+    --zindex-sticky: 1020;
+    --zindex-fixed: 1030;
+    --zindex-modal: 1055;
+    --zindex-popover: 1070;
+    --zindex-tooltip: 1080;
 }
 
 $breakpoint-laptop: rem(1180);
@@ -16,11 +25,3 @@ $breakpoint-tablet: rem(980);
 $breakpoint-mobile: rem(660);
 $breakpoint-mobile-sm: rem(500);
 $breakpoint-mobile-xs: rem(340);
-
-$zindex-dropdown: 1000;
-$zindex-sidebar: 1010;
-$zindex-sticky: 1020;
-$zindex-fixed: 1030;
-$zindex-modal: 1055;
-$zindex-popover: 1070;
-$zindex-tooltip: 1080;

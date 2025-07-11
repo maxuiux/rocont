@@ -1,27 +1,82 @@
 <header class="header">
-
-    <div class="header__items">
-        <div class="header__item  header__item--logo">
-            <a href="https://github.com/maxuiux/gulpforge" class="logo" target="_blank">
-                #gulpforge
-            </a>
-        </div>
-        <div class="header__item header__item--social">
-            <ul class="social__list">
-                @@include('shared/social-list-item.html',{
-                "href":"https://github.com/maxuiux",
-                "icon":"github",
-                })
-                @@include('shared/social-list-item.html',{
-                "href":"https://www.behance.net/maxuiux",
-                "icon":"behance",
-                })
-                @@include('shared/social-list-item.html',{
-                "href":"https://codepen.io/maxuiux",
-                "icon":"codepen",
-                })
-            </ul>
+    <div class="container">
+        <div class="header__blocks">
+            <div class="header__block">
+                <a href="/" class="logo" aria-label="Логотип Rocont">
+                    <svg>
+                        <use href="img/sprites/icon.svg#logo"></use>
+                    </svg>
+                </a>
+            </div>
+            <div class="header__block header__block--menu" data-sidebar-active="false">
+                <nav class="header__menu">
+                    <ul class="header__menu-list">
+                        <li class="header__menu-list-item">
+                            @@include("shared/buttons/button.html", {
+                            "tag":"a",
+                            "href":"href='#'",
+                            "type":"",
+                            "class":"button",
+                            "size":"sm",
+                            "color":"green",
+                            "title":"О системе",
+                            "attribute":"",
+                            })
+                        </li>
+                        <li class="header__menu-list-item">
+                            @@include("shared/buttons/button.html", {
+                            "tag":"a",
+                            "href":"href='#'",
+                            "type":"",
+                            "class":"button",
+                            "size":"sm",
+                            "color":"green",
+                            "title":"Архитектура",
+                            "attribute":"",
+                            })
+                        </li>
+                        <li class="header__menu-list-item">
+                            @@include("shared/buttons/button.html", {
+                            "tag":"a",
+                            "href":"href='#'",
+                            "type":"",
+                            "class":"button",
+                            "size":"sm",
+                            "color":"green",
+                            "title":"Мнения",
+                            "attribute":"",
+                            })
+                        </li>
+                        <li class="header__menu-list-item">
+                            @@include("shared/buttons/button.html", {
+                            "tag":"a",
+                            "href":"href='#'",
+                            "type":"",
+                            "class":"button",
+                            "size":"sm",
+                            "color":"green",
+                            "title":"Попробовать",
+                            "attribute":"",
+                            })
+                        </li>
+                        <li class="header__menu-list-item">
+                            @@include("shared/buttons/button.html", {
+                            "tag":"a",
+                            "href":"href='#'",
+                            "type":"",
+                            "class":"button",
+                            "size":"sm",
+                            "color":"green",
+                            "title":"Для своих",
+                            "attribute":"",
+                            })
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header__block header__block--hamburger">
+                @@include("shared/buttons/button-hamburger.html")
+            </div>
         </div>
     </div>
-
 </header>

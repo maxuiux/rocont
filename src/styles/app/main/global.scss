@@ -1,3 +1,10 @@
-.section-padding {
+.overflow-sidebar {
+    @include tablet {
+        overflow: hidden;
 
+        &::before {
+            opacity: 1;
+            pointer-events: all;
+        }
+    }
 }

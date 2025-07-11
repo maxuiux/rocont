@@ -1,5 +1,7 @@
 .container {
     max-width: $breakpoint-laptop;
+    width: 100%;
+    margin: 0 auto;
     padding: 0 rem(10);
 
     @include laptop {

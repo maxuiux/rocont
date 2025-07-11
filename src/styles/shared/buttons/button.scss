@@ -1,13 +1,21 @@
 .button {
-    padding: rem(20);
-    background-color: var(--color-green);
-    color: var(--color-white);
-    font-size: rem(20);
+    display: inline-flex;
+    align-self: baseline;
+    align-items: center;
+    justify-content: center;
+    gap: rem(8);
+    font-size: rem(16);
     font-weight: 500;
-    border-radius: rem(20);
-    transition: all var(--transition-1);
+    line-height: 110%;
+    color: var(--color-black);
+    transition: var(--transition-1);
 
-    &:hover {
-        background-color: var(--color-black);
+    &--sm {
+        padding: rem(8) rem(16);
+        border-radius: rem(32);
     }
+
+    &--md {}
+
+    &--xl {}
 }

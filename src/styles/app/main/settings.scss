@@ -15,14 +15,28 @@ html {
 body {
   font-family: var(--font-family-tildasans-vf);
   font-size: rem(16);
-  font-weight: 500;
+  font-weight: 400;
   color: var(--color-black);
   background: var(--color-gray);
   overflow-x: hidden;
+
   // display: flex;
   // flex-direction: column;
   // justify-content: space-between;
   // min-height: 100dvh;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+    background-color: rgba(0, 0, 0, 0.03);
+    opacity: 0;
+    pointer-events: none;
+    transition: var(--transition-sidebar);
+  }
 }
 
 img,

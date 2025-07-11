@@ -1,0 +1,28 @@
+.button--color {
+    &-green {
+        color: var(--color-black);
+        background-color: transparent;
+
+        @media (hover: hover) and (pointer: fine) {
+
+            &:hover,
+            &:focus-visible {
+                color: var(--color-white);
+                background-color: var(--color-green);
+            }
+
+            &:active {
+                color: var(--color-white);
+                background-color: var(--color-green);
+            }
+        }
+
+        @media (hover: none) and (pointer: coarse) {
+
+            &:active {
+                color: var(--color-white);
+                background-color: var(--color-green);
+            }
+        }
+    }
+}

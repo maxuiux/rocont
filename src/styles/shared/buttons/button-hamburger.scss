@@ -1,0 +1,33 @@
+.button-hamburger {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: rem(36);
+    height: rem(36);
+    border-radius: 50%;
+    background-color: var(--color-green);
+
+    &__wrap {
+        display: flex;
+        flex-direction: column;
+        gap: rem(3);
+        width: rem(18);
+        height: rem(12);
+        position: relative;
+    }
+
+    &__line {
+        display: block;
+        width: rem(18);
+        height: rem(2);
+        background-color: var(--color-white);
+        border-radius: rem(4);
+        transition: var(--transition-1);
+
+        &:nth-child(1) {}
+
+        &:nth-child(2) {}
+
+        &:nth-child(3) {}
+    }
+}
