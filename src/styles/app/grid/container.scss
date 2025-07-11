@@ -1,0 +1,55 @@
+.container {
+    max-width: $breakpoint-mobile;
+}
+
+.container-md {
+    max-width: $breakpoint-tablet;
+
+    @include tablet {
+        max-width: $breakpoint-mobile;
+    }
+}
+
+.container-xl {
+    max-width: $breakpoint-pc;
+
+    @include tablet {
+        max-width: $breakpoint-mobile;
+    }
+}
+
+.container-header {
+    max-width: $breakpoint-pc;
+    width: 100%;
+    padding: 0 rem(20);
+    margin: 0 auto;
+
+    @include tablet {
+        padding: 0 0 0 rem(10);
+    }
+}
+
+.container-footer {
+    max-width: $breakpoint-tablet;
+    width: 100%;
+    padding: 0 rem(20);
+    margin: 0 auto;
+}
+
+.container,
+.container-md,
+.container-xl {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 rem(20);
+
+    @include tablet {
+        padding: 0 rem(10);
+    }
+}
+
+.container-no-padding-right {
+    @include mobile {
+        padding-right: initial;
+    }
+}

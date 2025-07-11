@@ -1,0 +1,70 @@
+:root {
+    --font-family-montserrat: "Montserrat", Helvetica, Arial, sans-serif;
+
+    --color-black: #0f0f0f;
+    --color-white: #fff;
+    --color-green: #28C065;
+
+    // color-gray
+    --maxuiux-color-gray-100: #F6F6F6;
+    --maxuiux-color-gray-200: #EEEEEE;
+    --maxuiux-color-gray-300: #DDDDDD;
+    --maxuiux-color-gray-400: #CBCBCB;
+    --maxuiux-color-gray-500: #BABABA;
+    --maxuiux-color-gray-600: #A9A9A9;
+    --maxuiux-color-gray-700: #878787;
+    --maxuiux-color-gray-800: #656565;
+    --maxuiux-color-gray-900: #444444;
+    --maxuiux-color-gray-1000: #222222;
+    --maxuiux-color-gray-1100: #111111;
+
+    // color-purple
+    --maxuiux-color-purple-100: #F4EEFF;
+    --maxuiux-color-purple-200: #EADDFF;
+    --maxuiux-color-purple-300: #D5BBFF;
+    --maxuiux-color-purple-400: #BF99FE;
+    --maxuiux-color-purple-500: #AA77FE;
+    --maxuiux-color-purple-600: #9555FE;
+    --maxuiux-color-purple-700: #7744CB;
+    --maxuiux-color-purple-800: #593398;
+    --maxuiux-color-purple-900: #3C2266;
+    --maxuiux-color-purple-1000: #1E1133;
+    --maxuiux-color-purple-1100: #0F0819;
+
+    // color-black-rgba
+    --maxuiux-color-black-rgba-100: rgba(0, 0, 0, 1);
+    --maxuiux-color-black-rgba-095: rgba(0, 0, 0, 0.95);
+    --maxuiux-color-black-rgba-090: rgba(0, 0, 0, 0.9);
+    --maxuiux-color-black-rgba-085: rgba(0, 0, 0, 0.85);
+    --maxuiux-color-black-rgba-080: rgba(0, 0, 0, 0.8);
+    --maxuiux-color-black-rgba-075: rgba(0, 0, 0, 0.75);
+    --maxuiux-color-black-rgba-070: rgba(0, 0, 0, 0.7);
+    --maxuiux-color-black-rgba-065: rgba(0, 0, 0, 0.65);
+    --maxuiux-color-black-rgba-060: rgba(0, 0, 0, 0.6);
+    --maxuiux-color-black-rgba-055: rgba(0, 0, 0, 0.55);
+    --maxuiux-color-black-rgba-050: rgba(0, 0, 0, 0.5);
+    --maxuiux-color-black-rgba-045: rgba(0, 0, 0, 0.45);
+    --maxuiux-color-black-rgba-040: rgba(0, 0, 0, 0.4);
+    --maxuiux-color-black-rgba-035: rgba(0, 0, 0, 0.35);
+    --maxuiux-color-black-rgba-030: rgba(0, 0, 0, 0.3);
+    --maxuiux-color-black-rgba-025: rgba(0, 0, 0, 0.25);
+    --maxuiux-color-black-rgba-020: rgba(0, 0, 0, 0.2);
+    --maxuiux-color-black-rgba-015: rgba(0, 0, 0, 0.15);
+    --maxuiux-color-black-rgba-010: rgba(0, 0, 0, 0.1);
+    --maxuiux-color-black-rgba-005: rgba(0, 0, 0, 0.05);
+    --maxuiux-color-black-rgba-000: rgba(0, 0, 0, 0);
+
+    --transition-1: 0.2s;
+}
+
+$breakpoint-pc: 1400px;
+$breakpoint-tablet: 1200px;
+$breakpoint-mobile: 992px;
+
+$zindex-dropdown: 1000;
+$zindex-sidebar: 1010;
+$zindex-sticky: 1020;
+$zindex-fixed: 1030;
+$zindex-modal: 1055;
+$zindex-popover: 1070;
+$zindex-tooltip: 1080;

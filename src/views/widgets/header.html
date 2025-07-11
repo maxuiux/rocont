@@ -1,0 +1,27 @@
+<header class="header">
+
+    <div class="header__items">
+        <div class="header__item  header__item--logo">
+            <a href="https://github.com/maxuiux/gulpforge" class="logo" target="_blank">
+                #gulpforge
+            </a>
+        </div>
+        <div class="header__item header__item--social">
+            <ul class="social__list">
+                @@include('shared/social-list-item.html',{
+                "href":"https://github.com/maxuiux",
+                "icon":"github",
+                })
+                @@include('shared/social-list-item.html',{
+                "href":"https://www.behance.net/maxuiux",
+                "icon":"behance",
+                })
+                @@include('shared/social-list-item.html',{
+                "href":"https://codepen.io/maxuiux",
+                "icon":"codepen",
+                })
+            </ul>
+        </div>
+    </div>
+
+</header>

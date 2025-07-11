@@ -1,0 +1,14 @@
+.section-padding {
+    padding-top: rem(52);
+    padding-bottom: rem(52);
+
+    @include tablet {
+        padding-top: rem(42);
+        padding-bottom: rem(42);
+    }
+
+    @include mobile {
+        padding-top: rem(32);
+        padding-bottom: rem(32);
+    }
+}

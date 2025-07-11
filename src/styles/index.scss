@@ -1,0 +1,25 @@
+// app
+// --libs
+@import "app/libs/normalize";
+// --mixins
+@import "app/mixins/rem";
+@import "app/mixins/responsive";
+// --main
+@import "app/main/fonts";
+@import "app/main/variables";
+@import "app/main/settings";
+@import "app/main/global";
+// --grid
+@import "app/grid/container";
+
+// components
+// --slider
+@import "components/slider";
+
+// widgets
+// --header
+@import "widgets/header";
+
+// shared
+// --buttons
+@import "shared/buttons/button";

@@ -1,0 +1,6 @@
+$size: 16;
+
+@function rem($value) {
+  $remValue: calc($value / $size) + rem; 
+  @return $remValue;
+}

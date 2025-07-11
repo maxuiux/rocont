@@ -1,0 +1,13 @@
+.button {
+    padding: rem(20);
+    background-color: var(--color-green);
+    color: var(--color-white);
+    font-size: rem(20);
+    font-weight: 500;
+    border-radius: rem(20);
+    transition: all var(--transition-1);
+
+    &:hover {
+        background-color: var(--color-black);
+    }
+}

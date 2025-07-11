@@ -1,0 +1,95 @@
+.header {
+    height: rem(200);
+    background-color: #CBCBCB;
+    border-bottom: rem(1) solid #CBCBCB;
+    background-image: url(../img/header-background-image-01.jpg);
+    background-image: image-set(url(../img/header-background-image-01.webp) type("image/webp")),
+        image-set(url(../img/header-background-image-01.avif) type("image/avif"));
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    transition: all var(--transition-1);
+
+    @media (prefers-color-scheme: dark) {
+        background-image: url(../img/header-background-image-02.jpg);
+        background-image: image-set(url(../img/header-background-image-02.webp) type("image/webp")),
+            image-set(url(../img/header-background-image-02.avif) type("image/avif"));
+        border-color: var(--maxuiux-color-purple-600);
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-color: var(--maxuiux-color-black-rgba-010);
+    }
+
+    &__items {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 100%;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-self: stretch;
+
+        &--logo {
+            flex-basis: rem(360);
+            background-color: var(--maxuiux-color-black-rgba-020);
+            backdrop-filter: blur(rem(20));
+        }
+
+        &--social {
+            padding-right: rem(40);
+        }
+    }
+}
+
+.logo {
+    font-size: rem(36);
+    font-weight: 500;
+    text-decoration: underline;
+    color: var(--color-white);
+    transition: 0.2s;
+
+    &:hover {
+        color: var(--color-green);
+    }
+}
+
+.social {
+    &__list {
+        display: flex;
+        align-items: center;
+        gap: rem(4);
+        border-radius: rem(16);
+        padding: rem(8);
+        background-color: var(--maxuiux-color-black-rgba-020);
+        backdrop-filter: blur(rem(20));
+
+        &-item {
+            &-link {
+                display: block;
+                border-radius: rem(14);
+                padding: rem(12);
+                transition: var(--transition-1);
+
+                svg {
+                    width: rem(28);
+                    height: rem(28);
+                    color: var(--color-white);
+                    transition: var(--transition-1);
+                }
+
+                &:hover {
+                    background-color: var(--maxuiux-color-black-rgba-040);
+                }
+            }
+        }
+    }
+}
