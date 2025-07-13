@@ -3,6 +3,7 @@
     font-size: rem(64);
     font-weight: 700;
     line-height: 90%;
+    color: var(--color-black);
 
     @include laptop {
         font-size: rem(32);
@@ -16,11 +17,21 @@
     }
 }
 
+.subtitle {
+    font-family: var(--font-family-gropled);
+    font-size: rem(40);
+    font-weight: 700;
+    line-height: 95%;
+    color: var(--color-black);
+    text-wrap: pretty;
+}
+
 .text {
     font-size: rem(21);
     font-weight: 500;
     line-height: 140%;
     letter-spacing: -0.03em;
+    color: var(--color-black);
 
     @include laptop {
         font-size: rem(18);

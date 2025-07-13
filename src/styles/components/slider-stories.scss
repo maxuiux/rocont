@@ -1,0 +1,96 @@
+.slider-stories {
+    overflow: hidden;
+    padding: rem(96) 0;
+    user-select: none;
+
+    @include laptop {
+        padding: rem(64) 0;
+    }
+
+    &__blocks {
+        display: grid;
+        grid-template-columns: rem(236) 1fr;
+        gap: rem(8);
+        position: relative;
+
+        @include tablet {
+            grid-template-columns: 1fr;
+            gap: rem(24);
+            height: initial;
+        }
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: rem(8);
+    }
+
+    &__slider {
+        height: rem(450);
+        position: relative;
+
+        @include laptop {
+            height: rem(350);
+        }
+
+        @include tablet {
+            height: rem(320);
+        }
+    }
+
+    .swiper-slide {
+        width: rem(300);
+
+        @include laptop {
+            width: rem(250);
+        }
+    }
+
+    &-buttons {
+        display: flex;
+        align-items: center;
+        gap: rem(16);
+
+        @include tablet {
+            display: none;
+        }
+    }
+
+    &-button {
+        border-radius: rem(32);
+        overflow: hidden;
+        cursor: pointer;
+        color: var(--color-black);
+        background-color: transparent;
+        transition: var(--transition-1);
+
+        svg {
+            width: rem(44);
+            height: rem(20);
+            transition: inherit;
+        }
+
+        @media (hover: hover) and (pointer: fine) {
+
+            &:hover,
+            &:focus-visible {
+                color: var(--color-white);
+                background-color: var(--color-green);
+            }
+
+            &:active {
+                color: var(--color-white);
+            }
+        }
+
+        @media (hover: none) and (pointer: coarse) {
+
+            &:active {
+                color: var(--color-white);
+                background-color: var(--color-green);
+            }
+        }
+    }
+}

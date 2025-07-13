@@ -3,14 +3,14 @@
         <div class="header-info__wrap">
             <div class="header-info__blocks">
                 <div class="header-info__block header-info__block--1">
-                    <h1 class="header-info__title title">
-                        Просто потому <br>
-                        что можем
-                    </h1>
-                    <p class="header-info__text text">
-                        Мы&nbsp;запустили основной цикл в&nbsp;06:42. <br> Результаты наблюдаются,
-                        но&nbsp;не&nbsp;зафиксированы. <br>Рекомендуем сохранять спокойствие до&nbsp;следующего сигнала.
-                    </p>
+                    @@include("shared/typography/title.html", {
+                    "title":"Просто потому <br> что можем",
+                    "class":"header-info__title",
+                    })
+                    @@include("shared/typography/text.html", {
+                    "text":"Мы&nbsp;запустили основной цикл в&nbsp;06:42. <br> Результаты наблюдаются, но&nbsp;не&nbsp;зафиксированы. <br>Рекомендуем сохранять спокойствие до&nbsp;следующего сигнала.",
+                    "class":"header-info__text",
+                    })
                     @@include("shared/buttons/button-icon.html", {
                     "tag":"a",
                     "href":"href='#'",

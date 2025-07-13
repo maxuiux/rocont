@@ -1,3 +1,3 @@
 import './widgets/mobile-menu'
 import './widgets/ios-video'
-import './libs/swiper/slider-main'
+import './libs/swiper/items-slider'

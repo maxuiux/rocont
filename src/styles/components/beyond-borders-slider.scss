@@ -1,0 +1,31 @@
+.beyond-borders-slider {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+    &-container {
+        max-width: rem(1288);
+        width: 100%;
+        margin: 0 auto;
+        padding-right: rem(373);
+        overflow: visible;
+
+        @include laptop {
+            max-width: rem(1088);
+        }
+
+        @include tablet {
+            max-width: rem(1013);
+        }
+
+        @include mobile {
+            max-width: rem(853);
+        }
+
+        @include mobile-sm {
+            max-width: rem(839);
+        }
+    }
+}

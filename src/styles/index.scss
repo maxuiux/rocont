@@ -16,8 +16,9 @@
 
 // components
 // --slider
-@import "components/slider";
 @import "components/header-info";
+@import "components/beyond-borders-slider";
+@import "components/slider-stories";
 
 // widgets
 // --header
@@ -30,3 +31,5 @@
 @import "shared/buttons/button-green";
 @import "shared/buttons/button-green-icon";
 @import "shared/buttons/button-hamburger";
+// --cards
+@import "shared/cards/slider-stories-card";
