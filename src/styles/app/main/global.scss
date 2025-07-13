@@ -2,7 +2,7 @@
     @include tablet {
         overflow: hidden;
 
-        &::before {
+        &::after {
             opacity: 1;
             pointer-events: all;
         }

@@ -24,18 +24,29 @@ body {
   // flex-direction: column;
   // justify-content: space-between;
   // min-height: 100dvh;
-  &::before {
+
+  &::before,
+  &::after {
     content: "";
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    inset: 0;
+  }
+
+  &::after {
     z-index: 99;
-    background-color: rgba(0, 0, 0, 0.03);
+    background-color: rgba(0, 0, 0, 0.1);
     opacity: 0;
     pointer-events: none;
     transition: var(--transition-sidebar);
+  }
+
+  &::before {
+    display: inline-block;
+    z-index: -1;
+    background-image: url('../img/pattern.svg');
+    background-repeat: repeat;
+    pointer-events: none;
+    opacity: 0.03;
   }
 }
 
@@ -92,4 +103,22 @@ button {
 
 svg {
   display: flex;
+}
+
+::selection,
+::selection {
+  background-color: rgba(#1F8B48, 0.4);
+  color: var(--maxuiux-color-white);
+}
+
+::-moz-selection,
+::-moz-selection {
+  background-color: rgba(#1F8B48, 0.4);
+  color: var(--maxuiux-color-white);
+}
+
+::-webkit-selection,
+::-webkit-selection {
+  background-color: rgba(#1F8B48, 0.4);
+  color: var(--maxuiux-color-white);
 }

@@ -21,9 +21,3 @@
         @content;
     }
 }
-
-@mixin mobile-xs {
-    @media (max-width: $breakpoint-mobile-xs) {
-        @content;
-    }
-}

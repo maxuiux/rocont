@@ -15,8 +15,4 @@
     @include mobile {
         max-width: $breakpoint-mobile-sm;
     }
-
-    @include mobile-sm {
-        max-width: $breakpoint-mobile-xs;
-    }
 }

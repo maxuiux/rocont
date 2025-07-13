@@ -1,0 +1,23 @@
+.header-info-video {
+    width: 100%;
+    height: rem(460);
+    object-fit: cover;
+    object-position: top;
+    overflow: hidden;
+    border-radius: rem(24);
+    pointer-events: none;
+    user-select: none;
+    background-color: var(--color-poster-video);
+
+    @include laptop {
+        height: rem(352);
+    }
+
+    @include tablet {
+        height: rem(312);
+    }
+
+    @include mobile {
+        height: rem(200);
+    }
+}

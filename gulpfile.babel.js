@@ -21,11 +21,11 @@ const requireDir = require('require-dir'),
         },
         images: {
             src: [
-                './src/img/*.{jpg,jpeg,png,gif,tiff,svg,ico,webp,avif}',
+                './src/img/*.{jpg,jpeg,png,gif,tiff,svg,ico,webp,avif,mp4,webm}',
                 '!./src/img/favicon/*.{jpg,jpeg,png,gif,tiff}',
             ],
             dist: './dist/img/',
-            watch: './src/img/**/*.{jpg,jpeg,png,gif,tiff,svg,ico,webp,avif}',
+            watch: './src/img/**/*.{jpg,jpeg,png,gif,tiff,svg,ico,webp,avif,mp4,webm}',
         },
         spriteVector: {
             src: './src/img/sprites/vector/*.svg',

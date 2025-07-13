@@ -1,0 +1,54 @@
+.button--color {
+    &-green-icon {
+        font-family: var(--font-family-gropled);
+        color: var(--color-white);
+        background-color: var(--color-green);
+
+        svg {
+            width: rem(44);
+            height: rem(20);
+            color: var(--color-green);
+            background-color: var(--color-white);
+            border-radius: rem(24);
+            overflow: hidden;
+            transition: inherit;
+        }
+
+        @media (hover: hover) and (pointer: fine) {
+
+            &:hover,
+            &:focus-visible {
+                color: var(--color-green);
+                background-color: var(--color-white);
+
+                svg {
+                    color: var(--color-white);
+                    background-color: var(--color-green);
+                }
+            }
+
+            &:active {
+                color: var(--color-green);
+                background-color: var(--color-white);
+
+                svg {
+                    color: var(--color-white);
+                    background-color: var(--color-green);
+                }
+            }
+        }
+
+        @media (hover: none) and (pointer: coarse) {
+
+            &:active {
+                color: var(--color-green);
+                background-color: var(--color-white);
+
+                svg {
+                    color: var(--color-white);
+                    background-color: var(--color-green);
+                }
+            }
+        }
+    }
+}

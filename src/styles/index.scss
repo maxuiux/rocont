@@ -10,19 +10,23 @@
 @import "app/main/variables";
 @import "app/main/settings";
 @import "app/main/global";
+@import "app/main/typography";
 // --grid
 @import "app/grid/container";
 
 // components
 // --slider
 @import "components/slider";
+@import "components/header-info";
 
 // widgets
 // --header
 @import "widgets/header";
+@import "widgets/header-info-video";
 
 // shared
 // --buttons
 @import "shared/buttons/button";
 @import "shared/buttons/button-green";
+@import "shared/buttons/button-green-icon";
 @import "shared/buttons/button-hamburger";
