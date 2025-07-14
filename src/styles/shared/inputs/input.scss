@@ -1,0 +1,17 @@
+.input {
+    display: inline-flex;
+    max-width: 100%;
+    width: 100%;
+    font-size: rem(16);
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: -0.02em;
+    color: var(--color-black);
+    border-radius: rem(40);
+    background-color: var(--color-white);
+    padding: rem(8) rem(16) rem(8) rem(24);
+
+    &::placeholder {
+        color: transparentize($color: #2E2D2B, $amount: 0.5);
+    }
+}

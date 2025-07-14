@@ -1,0 +1,84 @@
+<section class="feedback">
+    <div class="container">
+        <div class="feedback__wrap">
+            <div class="feedback__info">
+                @@include("shared/typography/subtitle.html", {
+                "subtitle":"Если вы&nbsp;тоже решили &laquo;а&nbsp;почему&nbsp;бы и&nbsp;нет&raquo;",
+                "class":"feedback__title",
+                })
+                <ul class="feedback-list">
+                    <li class="feedback-list__item">
+                        <div class="feedback-list__item-icon">
+                            <svg>
+                                <use href="img/sprites/icon.svg#arrow-right-list"></use>
+                            </svg>
+                        </div>
+                        <span class="feedback-list__item-text">
+                            Можно заказать много
+                        </span>
+                    </li>
+                    <li class="feedback-list__item">
+                        <div class="feedback-list__item-icon">
+                            <svg>
+                                <use href="img/sprites/icon.svg#arrow-right-list"></use>
+                            </svg>
+                        </div>
+                        <span class="feedback-list__item-text">
+                            Доступ возможен через северный интерфейс
+                        </span>
+                    </li>
+                    <li class="feedback-list__item">
+                        <div class="feedback-list__item-icon">
+                            <svg>
+                                <use href="img/sprites/icon.svg#arrow-right-list"></use>
+                            </svg>
+                        </div>
+                        <span class="feedback-list__item-text">
+                            Можно просто поболтать
+                        </span>
+                    </li>
+                </ul>
+            </div>
+            <div class="feedback__form">
+                <form class="form">
+                    <div class="form__items">
+                        <div class="form__item">
+                            <div class="form__item-wrap">
+                                @@include("shared/inputs/input.html", {
+                                "type":"text",
+                                "name":"username",
+                                "id":"username",
+                                "attribute":"",
+                                "placeholder":"Имя",
+                                })
+                                @@include("shared/inputs/input.html", {
+                                "type":"tel",
+                                "name":"phone",
+                                "id":"phone",
+                                "attribute":"data-phone='number'",
+                                "placeholder":"Телефон",
+                                })
+                            </div>
+                            @@include("shared/checkboxes/checkbox.html", {
+                            "text":"Согласен(-на) на&nbsp;обработку чего угодно&nbsp;&mdash; лишь&nbsp;бы форма работала",
+                            })
+                        </div>
+                        <div class="form__item">
+                            @@include("shared/buttons/button-icon.html", {
+                            "tag":"a",
+                            "href":"href='#'",
+                            "type":"",
+                            "icon":"arrow-right",
+                            "class":"button",
+                            "size":"md",
+                            "color":"white-icon",
+                            "title":"Отправить",
+                            "attribute":"",
+                            })
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>

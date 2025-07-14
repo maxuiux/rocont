@@ -5,6 +5,14 @@
     left: 0;
     z-index: 1;
 
+    @include to(rem(483)) {
+        overflow: initial;
+        position: initial;
+        top: initial;
+        left: initial;
+        z-index: initial;
+    }
+
     &-container {
         max-width: rem(1288);
         width: 100%;
@@ -26,6 +34,14 @@
 
         @include mobile-sm {
             max-width: rem(839);
+        }
+
+        @include to(rem(483)) {
+            max-width: initial;
+            width: initial;
+            overflow: initial;
+            padding-right: initial;
+            margin: initial;
         }
     }
 }

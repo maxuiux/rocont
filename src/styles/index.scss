@@ -19,6 +19,11 @@
 @import "components/header-info";
 @import "components/beyond-borders-slider";
 @import "components/slider-stories";
+@import "components/feedback";
+
+// entities
+// --form
+@import "entities/form";
 
 // widgets
 // --header
@@ -30,6 +35,11 @@
 @import "shared/buttons/button";
 @import "shared/buttons/button-green";
 @import "shared/buttons/button-green-icon";
+@import "shared/buttons/button-white-icon";
 @import "shared/buttons/button-hamburger";
 // --cards
 @import "shared/cards/slider-stories-card";
+// -inputs 
+@import "shared/inputs/input";
+// -checkboxes
+@import "shared/checkboxes/checkbox";

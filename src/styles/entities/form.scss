@@ -1,0 +1,27 @@
+.form {
+    &__items {
+        display: flex;
+        flex-direction: column;
+        gap: rem(16);
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        gap: rem(8);
+
+        &-wrap {
+            display: flex;
+            flex-direction: column;
+            gap: rem(8);
+
+            @include tablet {
+                flex-direction: row;
+            }
+
+            @include mobile-sm {
+                flex-direction: column;
+            }
+        }
+    }
+}

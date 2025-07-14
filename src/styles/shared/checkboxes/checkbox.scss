@@ -1,0 +1,52 @@
+.checkbox {
+  display: inline-flex;
+  align-items: flex-start;
+  padding-top: rem(7);
+  padding-left: rem(32);
+  min-height: rem(24);
+  cursor: pointer;
+  font-size: rem(12);
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: -0.02em;
+  color: var(--color-black);
+  user-select: none;
+  position: relative;
+
+  input {
+    position: absolute;
+    opacity: 0;
+    height: 0;
+    width: 0;
+  }
+
+  &__checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    height: rem(24);
+    width: rem(24);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition-1);
+
+    .checkmark-icon {
+      width: rem(24);
+      height: rem(24);
+    }
+
+    .checked {
+      stroke-dasharray: 24;
+      stroke-dashoffset: 24;
+      transition: stroke-dashoffset 0.2s ease;
+    }
+  }
+
+  input:checked ~ .checkbox__checkmark {
+    .checked {
+      stroke-dashoffset: 0;
+    }
+  }
+}

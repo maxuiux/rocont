@@ -18,6 +18,13 @@
             gap: rem(24);
             height: initial;
         }
+
+        @include to(rem(483)) {
+            display: flex;
+            flex-direction: column;
+            grid-template-columns: initial;
+            position: initial;
+        }
     }
 
     &__info {
@@ -38,6 +45,14 @@
         @include tablet {
             height: rem(320);
         }
+
+        @include mobile {
+            height: rem(280);
+        }
+
+        @include to(rem(483)) {
+            height: initial;
+        }
     }
 
     .swiper-slide {
@@ -45,6 +60,12 @@
 
         @include laptop {
             width: rem(250);
+        }
+
+        @include to(rem(483)) {
+                width: rem(250);
+            min-width: rem(250);
+            width: auto !important;
         }
     }
 

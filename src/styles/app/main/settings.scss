@@ -18,6 +18,11 @@ body {
   font-weight: 400;
   color: var(--color-black);
   background: var(--color-gray);
+  background-image: url('../img/pattern.png');
+  background-image: image-set(url("../img/pattern.webp") type("image/webp"));
+  background-size: rem(2209) rem(2123);
+  background-position: center top 246%;
+  background-repeat: repeat;
   overflow-x: hidden;
 
   // display: flex;
@@ -25,28 +30,15 @@ body {
   // justify-content: space-between;
   // min-height: 100dvh;
 
-  &::before,
   &::after {
     content: "";
     position: absolute;
     inset: 0;
-  }
-
-  &::after {
     z-index: 99;
     background-color: rgba(0, 0, 0, 0.1);
     opacity: 0;
     pointer-events: none;
     transition: var(--transition-sidebar);
-  }
-
-  &::before {
-    display: inline-block;
-    z-index: -1;
-    background-image: url('../img/pattern.svg');
-    background-repeat: repeat;
-    pointer-events: none;
-    opacity: 0.03;
   }
 }
 

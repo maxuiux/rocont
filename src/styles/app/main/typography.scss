@@ -24,6 +24,11 @@
     line-height: 95%;
     color: var(--color-black);
     text-wrap: pretty;
+
+    @include laptop {
+        font-size: rem(28);
+        line-height: 100%;
+    }
 }
 
 .text {
