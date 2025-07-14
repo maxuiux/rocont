@@ -1,4 +1,5 @@
 import './widgets/mobile-menu'
 import './widgets/ios-video'
 import './widgets/mask-phone-number'
+import './widgets/current-year'
 import './libs/swiper/items-slider'

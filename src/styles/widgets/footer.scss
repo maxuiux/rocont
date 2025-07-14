@@ -1,0 +1,68 @@
+.footer {
+    padding-top: rem(32);
+    padding-bottom: rem(32);
+
+    &__blocks {
+        display: grid;
+        grid-template-columns: 1fr rem(250) rem(130);
+        gap: rem(32);
+
+        @include tablet {
+            display: flex;
+            flex-direction: column;
+            grid-template-columns: initial;
+        }
+    }
+
+    &__block {
+        &--menu {
+            @include tablet {
+                order: 2;
+
+                &::after {
+                    content: "";
+                    display: block;
+                    position: static;
+                    width: 100%;
+                    border-bottom: rem(2) solid var(--color-black);
+                    padding-bottom: rem(34);
+                }
+            }
+        }
+
+        &--copyright {
+            @include tablet {
+                order: 3;
+            }
+        }
+
+        &--logo {
+            @include tablet {
+                order: 1;
+            }
+        }
+    }
+
+    &__copyright {
+        display: flex;
+        flex-direction: column;
+        gap: rem(16);
+        font-size: rem(16);
+        font-weight: 400;
+        line-height: 150%;
+        letter-spacing: -0.02em;
+        color: var(--color-black);
+    }
+}
+
+.footer-menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: rem(16) rem(32);
+    font-size: rem(16);
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: -0.02em;
+    max-width: rem(288);
+    width: 100%;
+}
