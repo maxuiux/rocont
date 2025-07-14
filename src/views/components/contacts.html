@@ -1,0 +1,89 @@
+<section class="contacts">
+    <div class="container">
+        <div class="contacts__blocks">
+            <div class="contacts__block contacts__block--contacts">
+                @@include("shared/typography/subtitle.html", {
+                "subtitle":"Контакты",
+                "class":"",
+                })
+                <ul class="contacts-list">
+                    <li class="contacts-list__item">
+                        <div class="contacts-list__item-wrap">
+                            <div class="contacts-list__item-icon">
+                                <svg>
+                                    <use href="img/sprites/icon.svg#pin"></use>
+                                </svg>
+                            </div>
+                            <div class="contacts-list__item-text">
+                                Офис, где делают странные, но&nbsp;симпатичные вещи
+                            </div>
+                        </div>
+                    </li>
+                    <li class="contacts-list__item">
+                        <div class="contacts-list__item-wrap">
+                            <div class="contacts-list__item-icon">
+                                <svg>
+                                    <use href="img/sprites/icon.svg#time"></use>
+                                </svg>
+                            </div>
+                            <div class="contacts-list__item-text">
+                                Пн-Пт с&nbsp;10:00 до&nbsp;20:00
+                            </div>
+                        </div>
+                    </li>
+                    <li class="contacts-list__item">
+                        <a href="tel:+78004444444" class="contacts-list__item-wrap">
+                            <div class="contacts-list__item-icon">
+                                <svg>
+                                    <use href="img/sprites/icon.svg#phone"></use>
+                                </svg>
+                            </div>
+                            <div class="contacts-list__item-text">
+                                8 (800) 444 44&nbsp;44
+                            </div>
+                        </a>
+                        <a href="tel:+78008888888" class="contacts-list__item-wrap">
+                            <div class="contacts-list__item-icon">
+                                <svg>
+                                    <use href="img/sprites/icon.svg#phone"></use>
+                                </svg>
+                            </div>
+                            <div class="contacts-list__item-text">
+                                8 (800) 888 88&nbsp;88
+                            </div>
+                        </a>
+                    </li>
+                    <li class="contacts-list__item">
+                        <a href="mailto:example@mail.ru" class="contacts-list__item-wrap">
+                            <div class="contacts-list__item-icon">
+                                <svg>
+                                    <use href="img/sprites/icon.svg#mail"></use>
+                                </svg>
+                            </div>
+                            <div class="contacts-list__item-text">
+                                example@mail.ru
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                @@include("shared/buttons/button-icon.html", {
+                "tag":"a",
+                "href":"href='#'",
+                "type":"",
+                "icon":"arrow-right",
+                "class":"button",
+                "size":"md",
+                "color":"green-icon",
+                "title":"Связться",
+                "attribute":"",
+                })
+            </div>
+            <div class="contacts__block contacts__block--map">
+
+                    <iframe src="https://yandex.ru/map-widget/v1/?ll=30.433809%2C59.991707&z=16" width="545"
+                        height="448" frameborder="0" allowfullscreen="true" style="border:0;"></iframe>
+    
+            </div>
+        </div>
+    </div>
+</section>

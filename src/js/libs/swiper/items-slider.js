@@ -15,8 +15,6 @@ const swiper = new Swiper('[data-component="items-slider:slider-stories"]', {
         484: {
             slidesPerView: 'auto',
             effect: 'slide',
-            slidesOffsetBefore: 0,
-            slidesOffsetAfter: 0,
         },
     },
 

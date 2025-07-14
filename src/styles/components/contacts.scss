@@ -1,0 +1,112 @@
+.contacts {
+    &__blocks {
+        display: grid;
+        grid-template-columns: rem(607) 1fr;
+        gap: rem(8);
+
+        @include laptop {
+            grid-template-columns: rem(511) 1fr;
+        }
+
+        @include tablet {
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr rem(250);
+        }
+
+        @include mobile {
+            grid-template-rows: 1fr rem(220);
+        }
+    }
+
+    &__block {
+        background-color: var(--color-white);
+        border-radius: rem(24);
+        overflow: hidden;
+
+        &--contacts {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: rem(32);
+            padding: rem(64);
+
+            @include laptop {
+                gap: rem(24);
+                padding: rem(48);
+            }
+
+            @include tablet {
+                padding: rem(24);
+            }
+        }
+
+        &--map {
+            position: relative;
+            overflow: hidden;
+
+
+            iframe {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                border: none;
+            }
+        }
+    }
+}
+
+.contacts-list {
+    display: flex;
+    flex-direction: column;
+    gap: rem(16);
+
+    &__item {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: rem(16) rem(32);
+
+        @include laptop {
+            gap: rem(16) rem(24);
+        }
+
+        &-wrap {
+            display: flex;
+            align-items: center;
+            gap: rem(8);
+        }
+
+        &-icon {
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: rem(24);
+            height: rem(24);
+            border-radius: 50%;
+            overflow: hidden;
+            color: var(--color-white);
+            background-color: var(--color-green);
+
+            svg {
+                width: rem(24);
+                height: rem(24);
+                scale: 0.86;
+            }
+        }
+
+        &-text {
+            font-size: rem(21);
+            font-weight: 500;
+            line-height: 140%;
+            letter-spacing: -0.03em;
+
+            @include laptop {
+                font-size: rem(18);
+                line-height: 120%;
+            }
+        }
+    }
+}
