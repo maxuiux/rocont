@@ -20,6 +20,6 @@ package-lock.json
 *.log*
 
 # Папка с собранными файлами проекта
-dist
+# dist
 
 gulp-tasks/ftpSettings.json

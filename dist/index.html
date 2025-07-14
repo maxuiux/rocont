@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Rocont</title>
+
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="img/favicon.webp" type="image/webp">
+  <link rel="icon" href="img/favicon.png" type="image/png">
+
+  <link rel="stylesheet" href="libs/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/index.min.css">
+</head>
+
+<body>
+  <header class="header" data-header-style="false">
+    <div class="container">
+        <div class="header__blocks">
+            <div class="header__block">
+                <a href="/" class="logo" aria-label="Логотип Rocont">
+                    <svg>
+                        <use href="img/sprites/icon.svg#logo"></use>
+                    </svg>
+                </a>
+            </div>
+            <div class="header__block header__block--menu" data-sidebar-active="false">
+                <nav class="header__menu">
+                    <ul class="header__menu-list">
+                        <li class="header__menu-list-item">
+                            <a  href='#' class="button button--sm button--color-green" >
+    <span>
+        О системе
+    </span>
+</a>
+                        </li>
+                        <li class="header__menu-list-item">
+                            <a  href='#' class="button button--sm button--color-green" >
+    <span>
+        Архитектура
+    </span>
+</a>
+                        </li>
+                        <li class="header__menu-list-item">
+                            <a  href='#' class="button button--sm button--color-green" >
+    <span>
+        Мнения
+    </span>
+</a>
+                        </li>
+                        <li class="header__menu-list-item">
+                            <a  href='#' class="button button--sm button--color-green" >
+    <span>
+        Попробовать
+    </span>
+</a>
+                        </li>
+                        <li class="header__menu-list-item">
+                            <a  href='#' class="button button--sm button--color-green" >
+    <span>
+        Для своих
+    </span>
+</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header__block header__block--hamburger">
+                <button type="button" class="button-hamburger" data-button-hamburger="button-hamburger">
+    <span class="button-hamburger__wrap">
+        <span class="button-hamburger__line"></span>
+        <span class="button-hamburger__line"></span>
+        <span class="button-hamburger__line"></span>
+    </span>
+</button>
+            </div>
+        </div>
+    </div>
+</header>
+
+  <main>
+
+    <section class="header-info">
+    <div class="container">
+        <div class="header-info__wrap">
+            <div class="header-info__blocks">
+                <div class="header-info__block header-info__block--1">
+                    <h1 class="title header-info__title">
+    Просто потому <br> что можем
+</h1>
+                    <p class="text header-info__text">
+    Мы&nbsp;запустили основной цикл в&nbsp;06:42. <br> Результаты наблюдаются, но&nbsp;не&nbsp;зафиксированы. <br>Рекомендуем сохранять спокойствие до&nbsp;следующего сигнала.
+</p>
+                    <a  href='#' class="button button--md button--color-green-icon" >
+    <span>
+        Попробовать просто так
+    </span>
+    <svg>
+        <use href="img/sprites/icon.svg#arrow-right"></use>
+    </svg>
+</a>
+                </div>
+                <div class="header-info__block header-info__block--2">
+                    <p class="header-info__detail">
+                        Сертификат есть. Но это не точно.<br>
+                        СГР №AM.01.01 .01.003.R.00 o47 4.06.24
+                    </p>
+                </div>
+            </div>
+            <video class="header-info-video" data-ios-video="ios-video" autoplay muted loop playsinline preload="auto"
+                poster="img/header-info-image-01.jpg">
+                <source src="img/header-info-video-01.webm" type="video/webm" />
+                <source src="img/header-info-video-01.mp4" type="video/mp4" />
+                <img src="img/header-info-image-01.jpg" alt="Видео не поддерживается">
+                <track kind="captions">
+            </video>
+        </div>
+    </div>
+</section>
+    <section class="slider-stories">
+    <div class="container">
+        <div class="slider-stories__blocks">
+            <div class="slider-stories__info">
+                <h2 class="subtitle ">
+    Это&nbsp;&mdash; не совсем то, что вы думаете
+</h2>
+                <div class="slider-stories-buttons">
+                    <div class="slider-stories-button" data-element="items-slider:prev">
+                        <svg>
+                            <use href="img/sprites/icon.svg#arrow-left"></use>
+                        </svg>
+                    </div>
+                    <div class="slider-stories-button" data-element="items-slider:next">
+                        <svg>
+                            <use href="img/sprites/icon.svg#arrow-right"></use>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-stories__slider">
+                <div class="beyond-borders-slider">
+                    <div class="beyond-borders-slider-container" data-component="items-slider:slider-stories">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="slider-stories-card">
+                                    <picture>
+                                        <source srcset="img/slider-stories-image-01.avif" type="image/avif">
+                                        <source srcset="img/slider-stories-image-01.webp" type="image/webp">
+                                        <img src="img/slider-stories-image-01.jpg" loading="lazy" alt="Первый слайд">
+                                    </picture>
+                                    <div class="slider-stories-card__wrap">
+                                        <div class="slider-stories-card__info">
+                                            <h3 class="slider-stories-card__title">
+                                                Немного упругости
+                                            </h3>
+                                            <p class="slider-stories-card__text">
+                                                Чуть-чуть сияния, и&nbsp;ощущение, что вы&nbsp;о&nbsp;себе позаботились
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slider-stories-card">
+                                    <picture>
+                                        <source srcset="img/slider-stories-image-02.avif" type="image/avif">
+                                        <source srcset="img/slider-stories-image-02.webp" type="image/webp">
+                                        <img src="img/slider-stories-image-02.jpg" loading="lazy" alt="Первый слайд">
+                                    </picture>
+                                    <div class="slider-stories-card__wrap">
+                                        <div class="slider-stories-card__info">
+                                            <h3 class="slider-stories-card__title">
+                                                Немного упругости
+                                            </h3>
+                                            <p class="slider-stories-card__text">
+                                                Чуть-чуть сияния, и&nbsp;ощущение, что вы&nbsp;о&nbsp;себе позаботились
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slider-stories-card">
+                                    <picture>
+                                        <source srcset="img/slider-stories-image-03.avif" type="image/avif">
+                                        <source srcset="img/slider-stories-image-03.webp" type="image/webp">
+                                        <img src="img/slider-stories-image-03.jpg" loading="lazy" alt="Первый слайд">
+                                    </picture>
+                                    <div class="slider-stories-card__wrap">
+                                        <div class="slider-stories-card__info">
+                                            <h3 class="slider-stories-card__title">
+                                                Немного упругости
+                                            </h3>
+                                            <p class="slider-stories-card__text">
+                                                Чуть-чуть сияния, и&nbsp;ощущение, что вы&nbsp;о&nbsp;себе позаботились
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slider-stories-card">
+                                    <picture>
+                                        <source srcset="img/slider-stories-image-04.avif" type="image/avif">
+                                        <source srcset="img/slider-stories-image-04.webp" type="image/webp">
+                                        <img src="img/slider-stories-image-04.jpg" loading="lazy" alt="Первый слайд">
+                                    </picture>
+                                    <div class="slider-stories-card__wrap">
+                                        <div class="slider-stories-card__info">
+                                            <h3 class="slider-stories-card__title">
+                                                Немного упругости
+                                            </h3>
+                                            <p class="slider-stories-card__text">
+                                                Чуть-чуть сияния, и&nbsp;ощущение, что вы&nbsp;о&nbsp;себе позаботились
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slider-stories-card">
+                                    <picture>
+                                        <source srcset="img/slider-stories-image-05.avif" type="image/avif">
+                                        <source srcset="img/slider-stories-image-05.webp" type="image/webp">
+                                        <img src="img/slider-stories-image-05.jpg" loading="lazy" alt="Первый слайд">
+                                    </picture>
+                                    <div class="slider-stories-card__wrap">
+                                        <div class="slider-stories-card__info">
+                                            <h3 class="slider-stories-card__title">
+                                                Немного упругости
+                                            </h3>
+                                            <p class="slider-stories-card__text">
+                                                Чуть-чуть сияния, и&nbsp;ощущение, что вы&nbsp;о&nbsp;себе позаботились
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <section class="feedback">
+    <div class="container">
+        <div class="feedback__wrap">
+            <div class="feedback__info">
+                <h2 class="subtitle feedback__title">
+    Если вы&nbsp;тоже решили &laquo;а&nbsp;почему&nbsp;бы и&nbsp;нет&raquo;
+</h2>
+                <ul class="feedback-list">
+                    <li class="feedback-list__item">
+                        <div class="feedback-list__item-icon">
+                            <svg>
+                                <use href="img/sprites/icon.svg#arrow-right-list"></use>
+                            </svg>
+                        </div>
+                        <span class="feedback-list__item-text">
+                            Можно заказать много
+                        </span>
+                    </li>
+                    <li class="feedback-list__item">
+                        <div class="feedback-list__item-icon">
+                            <svg>
+                                <use href="img/sprites/icon.svg#arrow-right-list"></use>
+                            </svg>
+                        </div>
+                        <span class="feedback-list__item-text">
+                            Доступ возможен через северный интерфейс
+                        </span>
+                    </li>
+                    <li class="feedback-list__item">
+                        <div class="feedback-list__item-icon">
+                            <svg>
+                                <use href="img/sprites/icon.svg#arrow-right-list"></use>
+                            </svg>
+                        </div>
+                        <span class="feedback-list__item-text">
+                            Можно просто поболтать
+                        </span>
+                    </li>
+                </ul>
+            </div>
+            <div class="feedback__form">
+                <form class="form">
+                    <div class="form__items">
+                        <div class="form__item">
+                            <div class="form__item-wrap">
+                                <input class="input" type="text" name="username" id="username"  placeholder="Имя" required value autocomplete="off">
+
+
+                                <input class="input" type="tel" name="phone" id="phone" data-phone='number' placeholder="Телефон" required value autocomplete="off">
+
+
+                            </div>
+                            <label class="checkbox">
+    <input type="checkbox" />
+    <div class="checkbox__checkmark">
+        <svg class="checkmark-icon" viewBox="0 0 24 24" fill="none">
+            <path
+                d="M21 12C21 13.78 20.4722 15.5201 19.4832 17.0001C18.4943 18.4802 17.0887 19.6337 15.4442 20.3149C13.7996 20.9961 11.99 21.1743 10.2442 20.8271C8.49836 20.4798 6.89471 19.6226 5.63604 18.364C4.37737 17.1053 3.5202 15.5016 3.17293 13.7558C2.82567 12.01 3.0039 10.2004 3.68508 8.55585C4.36627 6.91131 5.51983 5.50571 6.99987 4.51677C8.47991 3.52784 10.22 3 12 3"
+                stroke="white" stroke-width="2" stroke-linecap="round" />
+            <path class="checked" d="M9.00113 11.6673L11.2504 13.9595L17.9989 7.04102" stroke="white" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+    </div>
+    <span class="checkbox__title">
+        Согласен(-на) на&nbsp;обработку чего угодно&nbsp;&mdash; лишь&nbsp;бы форма работала
+    </span>
+</label>
+                        </div>
+                        <div class="form__item">
+                            <a  href='#' class="button button--md button--color-white-icon" >
+    <span>
+        Отправить
+    </span>
+    <svg>
+        <use href="img/sprites/icon.svg#arrow-right"></use>
+    </svg>
+</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+    <section class="contacts">
+    <div class="container">
+        <div class="contacts__blocks">
+            <div class="contacts__block contacts__block--contacts">
+                <h2 class="subtitle ">
+    Контакты
+</h2>
+                <ul class="contacts-list">
+                    <li class="contacts-list__item">
+                        <div class="contacts-list__item-wrap">
+                            <div class="contacts-list__item-icon">
+                                <svg>
+                                    <use href="img/sprites/icon.svg#pin"></use>
+                                </svg>
+                            </div>
+                            <div class="contacts-list__item-text">
+                                Офис, где делают странные, но&nbsp;симпатичные вещи
+                            </div>
+                        </div>
+                    </li>
+                    <li class="contacts-list__item">
+                        <div class="contacts-list__item-wrap">
+                            <div class="contacts-list__item-icon">
+                                <svg>
+                                    <use href="img/sprites/icon.svg#time"></use>
+                                </svg>
+                            </div>
+                            <div class="contacts-list__item-text">
+                                Пн-Пт с&nbsp;10:00 до&nbsp;20:00
+                            </div>
+                        </div>
+                    </li>
+                    <li class="contacts-list__item">
+                        <a href="tel:+78004444444" class="contacts-list__item-wrap">
+                            <div class="contacts-list__item-icon">
+                                <svg>
+                                    <use href="img/sprites/icon.svg#phone"></use>
+                                </svg>
+                            </div>
+                            <div class="contacts-list__item-text">
+                                8 (800) 444 44&nbsp;44
+                            </div>
+                        </a>
+                        <a href="tel:+78008888888" class="contacts-list__item-wrap">
+                            <div class="contacts-list__item-icon">
+                                <svg>
+                                    <use href="img/sprites/icon.svg#phone"></use>
+                                </svg>
+                            </div>
+                            <div class="contacts-list__item-text">
+                                8 (800) 888 88&nbsp;88
+                            </div>
+                        </a>
+                    </li>
+                    <li class="contacts-list__item">
+                        <a href="mailto:example@mail.ru" class="contacts-list__item-wrap">
+                            <div class="contacts-list__item-icon">
+                                <svg>
+                                    <use href="img/sprites/icon.svg#mail"></use>
+                                </svg>
+                            </div>
+                            <div class="contacts-list__item-text">
+                                example@mail.ru
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <a  href='#' class="button button--md button--color-green-icon" >
+    <span>
+        Связться
+    </span>
+    <svg>
+        <use href="img/sprites/icon.svg#arrow-right"></use>
+    </svg>
+</a>
+            </div>
+            <div class="contacts__block contacts__block--map">
+                <iframe src="https://yandex.ru/map-widget/v1/?ll=30.433809%2C59.991707&z=16" width="545" height="448"
+                    frameborder="0" allowfullscreen="true" style="border:0;"></iframe>
+            </div>
+        </div>
+    </div>
+</section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+        <div class="footer__blocks">
+            <div class="footer__block footer__block--menu">
+                <ul class="footer-menu">
+                    <li class="footer-menu__item">
+                        <a href="#" class="footer-menu__link">
+                            О системе
+                        </a>
+                    </li>
+                    <li class="footer-menu__item">
+                        <a href="#" class="footer-menu__link">
+                            Архитектура
+                        </a>
+                    </li>
+                    <li class="footer-menu__item">
+                        <a href="#" class="footer-menu__link">
+                            Для своих
+                        </a>
+                    </li>
+                    <li class="footer-menu__item">
+                        <a href="#" class="footer-menu__link">
+                            Состав
+                        </a>
+                    </li>
+                    <li class="footer-menu__item">
+                        <a href="#" class="footer-menu__link">
+                            Отзывы
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__block footer__block--copyright">
+                <div class="footer__copyright">
+                    <p>
+                        Коллаген © <sapn data-current-year="true"></sapn><br>
+                    </p>
+                    <p>
+                        Политика обработки чего-то личного
+                    </p>
+                </div>
+            </div>
+            <div class="footer__block footer__block--logo">
+                <a href="/" class="logo" aria-label="Логотип Rocont">
+                    <svg>
+                        <use href="img/sprites/icon.svg#logo"></use>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="libs/swiper/swiper-bundle.min.js"></script>
+<script src="js/index.min.js"></script>
+
+</body>
+
+</html>
