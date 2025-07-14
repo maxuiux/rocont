@@ -1,5 +1,10 @@
 .header {
     padding: rem(8) 0;
+    transition: var(--transition-1);
+
+    .container {
+        transition: var(--transition-sidebar);
+    }
 
     &__blocks {
         display: flex;
@@ -8,6 +13,10 @@
         padding: rem(16) rem(24);
         background-color: var(--color-white);
         border-radius: rem(24);
+        border-width: rem(1);
+        border-style: solid;
+        border-color: transparent;
+        transition: var(--transition-1);
 
         @include tablet {
             padding: rem(16) 0;
@@ -97,3 +106,35 @@
         }
     }
 }
+
+// [data-header-style="true"] {
+//     position: fixed;
+//     top: 0;
+//     left: 0;
+//     right: 0;
+//     z-index: 1000;
+
+//     .container {
+//         max-width: rem(1200);
+
+//         @include laptop {
+//             max-width: $breakpoint-tablet;
+//         }
+
+//         @include tablet {
+//             max-width: $breakpoint-mobile;
+//         }
+
+//         @include mobile {
+//             max-width: $breakpoint-mobile-sm;
+//         }
+//     }
+
+//     .header__blocks {
+//         background-color: rgba(255, 255, 255, 0.9);
+//         box-shadow: 1px 10px 22px 9px rgba(0, 0, 0, 0.05);
+//         backdrop-filter: blur(rem(50)) brightness(2.8) saturate(1.5);
+//         border-color: rgba(0, 0, 0, 0.05);
+//         padding: rem(16);
+//     }
+// }
