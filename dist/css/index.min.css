@@ -828,11 +828,6 @@ svg {
 
 .header {
   padding: 0.5rem 0;
-  transition: var(--transition-1);
-}
-
-.header .container {
-  transition: var(--transition-sidebar);
 }
 
 .header__blocks {
@@ -842,10 +837,6 @@ svg {
   padding: 1rem 1.5rem;
   background-color: var(--color-white);
   border-radius: 1.5rem;
-  border-width: 0.0625rem;
-  border-style: solid;
-  border-color: transparent;
-  transition: var(--transition-1);
 }
 
 .header__block--hamburger {
